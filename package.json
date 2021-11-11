@@ -1,0 +1,20 @@
+{
+  "name": "subtree-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cosmin-123morf/subtree-main.git",
+  "author": "<cosmin.simon@123formbuilder.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.4.14"
+  },
+  "scripts": {
+    "compile": "tsc && tsc -p tsconfig.common.json",
+    "clean": "rm -rf src/ApiService/*",
+    "start": "yarn clean && openapi-generator-cli generate",
+    "test": "jest --watch --verbose=true",
+    "test:all": "jest",
+    "lint": "eslint \"**/*.ts\"",
+    "lint:fix": "yarn lint --fix"
+  }
+}
