@@ -12,6 +12,7 @@
     "compile": "tsc && tsc -p tsconfig.common.json",
     "clean": "rm -rf generated/weather/* && rm -rf generated/pets/*",
     "start": "yarn clean && openapi-generator-cli generate",
+    "git:all": "git subtree push --prefix generated/weather subtree-weather master && git subtree push --prefix generated/pets subtree-pets master",
     "test": "jest --watch --verbose=true",
     "test:all": "jest",
     "lint": "eslint \"**/*.ts\"",
