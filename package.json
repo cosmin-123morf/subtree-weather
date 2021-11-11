@@ -10,7 +10,7 @@
   },
   "scripts": {
     "compile": "tsc && tsc -p tsconfig.common.json",
-    "clean": "rm -rf src/ApiService/*",
+    "clean": "rm -rf generated/weather/* && rm -rf generated/pets/*",
     "start": "yarn clean && openapi-generator-cli generate",
     "test": "jest --watch --verbose=true",
     "test:all": "jest",

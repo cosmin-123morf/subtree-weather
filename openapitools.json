@@ -17,7 +17,7 @@
       },
       "weather": {
         "generatorName": "typescript-axios",
-        "output": "src/ApiService/weather",
+        "output": "generated/weather/api-reference",
         "glob": "domains/weather/contract.yaml",
         "additionalProperties": {
           "withSeparateModelsAndApi": true,
