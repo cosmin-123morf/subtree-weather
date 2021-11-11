@@ -6,7 +6,7 @@
     "generators": {
       "pets": {
         "generatorName": "typescript-axios",
-        "output": "src/ApiService/pets",
+        "output": "generated/pets/api-reference",
         "glob": "domains/pets/contract.yaml",
         "additionalProperties": {
           "withSeparateModelsAndApi": true,
